@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Time Anomaly Insight Design System - Professional Data Analysis Platform */
+
+@layer base {
+  :root {
+    /* Light mode colors */
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 221 83% 65%;
+    
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    --accent-glow: 262 83% 70%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 355 100% 97%;
+    --success-glow: 142 76% 48%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 89%;
+    --warning-glow: 38 92% 62%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    
+    --data-positive: 142 76% 36%;
+    --data-negative: 0 84% 60%;
+    --data-neutral: 215 16% 47%;
+    --data-anomaly: 262 83% 58%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-data: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(var(--background) / 0.1), hsl(var(--background) / 0.05));
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    --shadow-data: 0 4px 20px -2px hsl(var(--accent) / 0.25);
+    
+    --radius: 0.75rem;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Dark mode - Professional data analysis theme */
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    
+    --card: 224 71% 6%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 224 71% 6%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 221 83% 53%;
+    --primary-foreground: 224 71% 4%;
+    --primary-glow: 221 83% 65%;
+    
+    --secondary: 215 27% 17%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 215 27% 17%;
+    --muted-foreground: 217 10% 65%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 224 71% 4%;
+    --accent-glow: 262 83% 70%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 355 100% 97%;
+    --success-glow: 142 76% 48%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 89%;
+    --warning-glow: 38 92% 62%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 215 27% 17%;
+    --input: 215 27% 17%;
+    --ring: 221 83% 53%;
+    
+    --data-positive: 142 76% 36%;
+    --data-negative: 0 84% 60%;
+    --data-neutral: 217 10% 65%;
+    --data-anomaly: 262 83% 58%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-data: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(var(--card) / 0.8), hsl(var(--card) / 0.4));
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-data: 0 4px 20px -2px hsl(var(--accent) / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
